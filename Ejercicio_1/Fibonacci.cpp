@@ -25,7 +25,7 @@ int fibonacci(int n) {
 }
 
 int main() {
-    int n = 3;
+    int n = 10;
     cout << "Fibonacci de la posicion " << n << " es: " << fibonacci(n) << endl;
     return 0;
 }
