@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector> // Para usar std::vector
+#include <vector>
 
 using namespace std;
 
