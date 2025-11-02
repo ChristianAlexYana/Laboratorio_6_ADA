@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int INF = 1e9; // valor grande para representar que no hay conexion
+const int INF = 1e9; // valor grande representa que no hay conexion
 
-// funcion recursiva con memoizacion (programacion dinamica)
 int minCostPath(int i, int j, const vector<vector<int>>& cost, vector<vector<int>>& dp) {
     if (i == j) return 0; // costo cero si origen y destino son iguales
     if (dp[i][j] != -1) return dp[i][j];
