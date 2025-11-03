@@ -47,13 +47,13 @@ int knapsack(int W, const std::vector<int>& w, const std::vector<int>& v) {
 
             if (pesoActual <= j) { // El objeto actual cabe en la mochila
                 // Opción 2: Incluir el objeto 'i'.
-                int valorConObjeto = valorActual + dp[i - 1][j - pesoActual]; // Valor si incluimos el objeto actual
+                int valorConObjeto = valorActual + dp[i - 1][j - pesoActual]; // Valor si se incluye el objeto actual
                 
-                // Elegimos la mejor de las dos opciones
+                // Se elige la mejor de las dos opciones
                 dp[i][j] = std::max(valorConObjeto, valorSinObjeto);
             } 
             else {
-                // El objeto actual no cabe, tomamos la Opción 1.
+                // El objeto actual no cabe, se toma la Opción 1.
                 dp[i][j] = valorSinObjeto;
             }
         }
